@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+<script src="navbar.js"></script>
+<link rel="stylesheet" href="sidebar.css">
+    <script src="sidebar.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+      
+          <div class="navbar-header">
+            <button class="navbar-toggler" data-toggle="open-navbar1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a href="#">
+              <h4>   Placement Training</h4>
+            </a>
+          </div>
+      
+          <div class="navbar-menu" id="open-navbar1">
+            <ul class="navbar-nav">
+              <li class="active"><a href="home2.php">Home</a></li>
+              <li class="navbar-dropdown">
+                <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+                  Categories <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="my-dropdown-id">
+                  <li><a href="#">Actions</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">Seprated link</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">One more seprated link.</a></li>
+                </ul>
+              </li>
+              <li class="navbar-dropdown">
+                <a href="#" class="dropdown-toggler" data-dropdown="blog">
+                  Blog <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="blog">
+                  <li><a href="#">Some category</a></li>
+                  <li><a href="#">Some another category</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">Seprated link</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">One more seprated link.</a></li>
+                </ul>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="../sms/logout.php">Signout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+
+      <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>  
+        <div class="list">
+          <div class="item" onclick="document.location='home2.php'">Home</div>
+          <div class="item" onclick="document.location='request_meeting.php'">counselling</div>
+          <div class="item" onclick="document.location='examname.php'">Tests</div>
+          <div class="item" onclick="document.location='download.php'">Question Sets</div>
+        </div>
+      </div>
+</body>
+</html>
+
+
